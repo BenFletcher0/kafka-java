@@ -6,6 +6,6 @@
 #
 # Learn more: https://codecrafters.io/program-interface
 
-set -e # Exit on failure
+set -e # Exit okn failure
 
 mvn -B package -Ddir=/tmp/codecrafters-build-kafka-java
