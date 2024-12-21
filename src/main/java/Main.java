@@ -12,6 +12,7 @@ public class Main {
     ServerSocket serverSocket = null;
     Socket clientSocket = null;
     int port = 9092;
+    
     try {
       serverSocket = new ServerSocket(port);
       serverSocket.setReuseAddress(true);
