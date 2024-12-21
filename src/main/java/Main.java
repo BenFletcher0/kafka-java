@@ -30,15 +30,15 @@ public class Main {
       out.writeInt(messageSize);
       out.writeInt(header);
 
+      in.close();
+      out.close();
+
     } catch (IOException e) {
       System.out.println("IOException: " + e.getMessage());
     } finally {
       try {
         if (clientSocket != null) {
           clientSocket.close();
-        }
-        if(serverSocket != null){
-          serverSocket.close();
         }
       } catch (IOException e) {
         System.out.println("IOException: " + e.getMessage());
