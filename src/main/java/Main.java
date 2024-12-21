@@ -33,6 +33,8 @@ public class Main {
       in.close();
       out.close();
 
+      serverSocket.close();
+
     } catch (IOException e) {
       System.out.println("IOException: " + e.getMessage());
     } finally {
